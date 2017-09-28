@@ -14,4 +14,3 @@ C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\Weath
 C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.CoreCompileInputs.cache
 C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\WeatherApp.dll
 C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\WeatherApp.pdb
-C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csprojResolveAssemblyReference.cache

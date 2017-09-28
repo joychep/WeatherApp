@@ -13,6 +13,7 @@ namespace WeatherApp
         public string Sunset { get; set; }
         public string Error { get; set; }
         public string Icon { get; set; }
+        public string Description { get; set; }
 
         public Weather()
         {
@@ -26,6 +27,7 @@ namespace WeatherApp
             this.Sunset = " ";
             this.Error = " ";
             this.Icon = " ";
+            this.Description = " ";
         }
     }
 }

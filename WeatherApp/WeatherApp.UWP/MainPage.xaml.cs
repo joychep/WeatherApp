@@ -31,24 +31,26 @@ namespace WeatherApp.UWP
             if (!String.IsNullOrEmpty(zipCodeEntry.Text))
             {
                 Weather weather = await Core.GetWeather(zipCodeEntry.Text);
+                locationText.Text = weather.Title;
+                tempText.Text = weather.Temperature;
+                windText.Text = weather.Wind;
+                visibilityText.Text = weather.Visibility;
+                humidityText.Text = weather.Humidity;
+                sunriseText.Text = weather.Sunrise;
+                sunsetText.Text = weather.Sunset;
+                zipCodeEntry.Text = "";
                 if (weather.Error == "")
                 {
-                    locationText.Text = weather.Title;
-                    tempText.Text = weather.Temperature;
-                    windText.Text = weather.Wind;
-                    visibilityText.Text = weather.Visibility;
-                    humidityText.Text = weather.Humidity;
-                    sunriseText.Text = weather.Sunrise;
-                    sunsetText.Text = weather.Sunset;
-                    zipCodeEntry.Text = "";
                     zipCodeEntry.PlaceholderText = "Enter a Zip Code";
                     weatherBtn.Content = "Search Again";
-                    weatherImage.Source = new BitmapImage(new Uri("ms-appx:///Assets/Weather_icons/01d.png"));
+                    String weather_icon = "ms-appx:///Assets/Weather_icons/" + weather.Icon + ".png";
+                    weatherImage.Source = new BitmapImage(new Uri(weather_icon));
                 }
                 else
                 {
                     zipCodeEntry.Text = "";
                     zipCodeEntry.PlaceholderText = weather.Error;
+                    weatherImage.Source = null;
                 }
             }
         }

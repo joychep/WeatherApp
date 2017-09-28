@@ -1,0 +1,2 @@
+C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp.Android\obj\Debug\WeatherApp.Android.csprojResolveAssemblyReference.cache
+C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp.Android\obj\Debug\WeatherApp.Android.csproj.CoreCompileInputs.cache

@@ -1,2 +1,0 @@
-C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp.UWP\WeatherApp.UWP.csproj;x86
-C:\Users\cheche\Documents\Learning\Learning\Projects\WeatherApp\WeatherApp\WeatherApp\WeatherApp.csproj;neutral

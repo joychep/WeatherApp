@@ -26,14 +26,14 @@ namespace WeatherApp
                 weather.Title = (string)results["name"];
                 int temp = (int)results["main"]["temp"];
                 weather.Temperature = temp.ToString() + (Char)176 + " C";
-                weather.Wind = (string)results["wind"]["speed"] + " mph";
-                weather.Humidity = "Humidity" +(string)results["main"]["humidity"] + " %";
+                weather.Wind = "Wind: " + (string)results["wind"]["speed"] + " mph";
+                weather.Humidity = "Humidity: " + (string)results["main"]["humidity"] + " %";
                 weather.Visibility = "Visibility: " + (string)results["weather"][0]["main"];
-
+                weather.Icon = (string)results["weather"][0]["icon"];
+                weather.Description = (string)results["weather"][0]["description"];
                 DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
                 DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
                 DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
-                sunrise.ToLocalTime();
                 weather.Sunrise = "Sunrise: " + sunrise.ToString() + " UTC";
                 weather.Sunset = "Sunset: " + sunset.ToString() + " UTC";
                 weather.Error = "";
