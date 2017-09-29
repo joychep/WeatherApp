@@ -1,6 +1,7 @@
 # Weather APP
 
-This is a cross platform (Windows UWP, Android, iOS) weather app that diplays the weather of a given Zip Code.
+This is a cross platform (Windows UWP, Android, iOS) weather app that diplays the weather of a given Zip Code. This app uses weather from
+[openweathermap.org](https://openweathermap.org)
 
 ## Built With
 
